@@ -1,11 +1,12 @@
 package benchmark
 
 import (
-	"ikunDb/engine"
-	"ikunDb/utils"
 	"math/rand"
 	"testing"
 	"time"
+
+	"github.com/hello-ikun/ikunDb/engine"
+	"github.com/hello-ikun/ikunDb/utils"
 
 	"github.com/stretchr/testify/assert"
 )

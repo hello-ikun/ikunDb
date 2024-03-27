@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"ikunDb/redis"
+	"github.com/hello-ikun/ikunDb/redis"
 
 	"github.com/tidwall/redcon"
 )

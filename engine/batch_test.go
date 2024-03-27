@@ -2,7 +2,7 @@ package engine
 
 import (
 	"fmt"
-	"ikunDb/utils"
+	"github.com/hello-ikun/ikunDb/utils"
 	"testing"
 
 	"github.com/stretchr/testify/assert"

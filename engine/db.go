@@ -2,10 +2,10 @@ package engine
 
 import (
 	"errors"
-	"ikunDb/index"
-	"ikunDb/options"
-	"ikunDb/storage"
-	"ikunDb/utils"
+	"github.com/hello-ikun/ikunDb/index"
+	"github.com/hello-ikun/ikunDb/options"
+	"github.com/hello-ikun/ikunDb/storage"
+	"github.com/hello-ikun/ikunDb/utils"
 	"io"
 	"os"
 	"path/filepath"

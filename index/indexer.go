@@ -3,7 +3,7 @@ package index
 import (
 	"bytes"
 	"fmt"
-	"ikunDb/storage"
+	"github.com/hello-ikun/ikunDb/storage"
 	"sync"
 
 	"github.com/elliotchance/orderedmap"

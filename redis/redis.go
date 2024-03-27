@@ -2,8 +2,8 @@ package redis
 
 import (
 	"errors"
-	"ikunDb/engine"
-	"ikunDb/options"
+	"github.com/hello-ikun/ikunDb/engine"
+	"github.com/hello-ikun/ikunDb/options"
 	"time"
 )
 

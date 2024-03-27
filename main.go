@@ -2,27 +2,29 @@ package main
 
 import (
 	"fmt"
-	"ikunDb/engine"
+
+	"github.com/hello-ikun/ikunDb/engine"
+	"github.com/hello-ikun/ikunDb/utils"
 )
 
 func main() {
 	db := engine.NewIkunDb()
 	fmt.Println(db.GetSeqNumber())
-	//batch := db.DefaultBathch()
-	//for i := 0; i < 150; i++ {
-	//	key := utils.GenerateTestKey(i)
-	//	val := utils.SecureRandomByte(12)
-	//	//if err := db.Set(key, val, 1); err != nil {
-	//	//	panic(err)
-	//	//}
-	//	batch.Set(key, val, 0)
-	//}
-	//batch.Commit()=
-	//err := db.Merge()
-	//if err != nil {
-	//	fmt.Println(err)
-	//}
-	//fmt.Println(db.GetSeqNumber())
+	batch := db.DefaultBathch()
+	for i := 0; i < 150; i++ {
+		key := utils.GenerateTestKey(i)
+		val := utils.SecureRandomByte(12)
+		//if err := db.Set(key, val, 1); err != nil {
+		//	panic(err)
+		//}
+		batch.Set(key, val, 0)
+	}
+	batch.Commit()
+	err := db.Merge()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(db.GetSeqNumber())
 	//for _, v := range db.ListKey() {
 	//	fmt.Println(string(v))
 	//}

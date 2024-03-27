@@ -3,9 +3,9 @@ package engine
 import (
 	"errors"
 	"fmt"
-	"ikunDb/index"
-	"ikunDb/options"
-	"ikunDb/storage"
+	"github.com/hello-ikun/ikunDb/index"
+	"github.com/hello-ikun/ikunDb/options"
+	"github.com/hello-ikun/ikunDb/storage"
 	"strconv"
 	"sync"
 	"sync/atomic"

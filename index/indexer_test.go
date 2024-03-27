@@ -1,8 +1,8 @@
 package index
 
 import (
-	"ikunDb/storage"
-	"ikunDb/utils"
+	"github.com/hello-ikun/ikunDb/storage"
+	"github.com/hello-ikun/ikunDb/utils"
 	"testing"
 )
 

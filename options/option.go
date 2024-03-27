@@ -1,7 +1,7 @@
 package options
 
 import (
-	"ikunDb/index"
+	"github.com/hello-ikun/ikunDb/index"
 )
 
 // Options set options
