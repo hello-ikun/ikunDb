@@ -2,10 +2,6 @@ package engine
 
 import (
 	"errors"
-	"github.com/hello-ikun/ikunDb/index"
-	"github.com/hello-ikun/ikunDb/options"
-	"github.com/hello-ikun/ikunDb/storage"
-	"github.com/hello-ikun/ikunDb/utils"
 	"io"
 	"os"
 	"path/filepath"
@@ -14,6 +10,11 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/hello-ikun/ikunDb/index"
+	"github.com/hello-ikun/ikunDb/options"
+	"github.com/hello-ikun/ikunDb/storage"
+	"github.com/hello-ikun/ikunDb/utils"
 
 	"github.com/gofrs/flock"
 )
@@ -547,6 +548,8 @@ func (db *IkunDB) setActiveFile() error {
 	if db.activeFiles != nil {
 		fileId = db.activeFiles.Fid + 1
 		db.olderFiles[db.activeFiles.Fid] = db.activeFiles
+	} else {
+		fileId = 1
 	}
 
 	data, err := index.OpenDataFile(db.options.DirPath, fileId)

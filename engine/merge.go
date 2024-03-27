@@ -3,14 +3,15 @@ package engine
 import (
 	"encoding/binary"
 	"errors"
-	"github.com/hello-ikun/ikunDb/index"
-	"github.com/hello-ikun/ikunDb/options"
-	"github.com/hello-ikun/ikunDb/storage"
-	"github.com/hello-ikun/ikunDb/utils"
 	"os"
 	"path/filepath"
 	"sync"
 	"time"
+
+	"github.com/hello-ikun/ikunDb/index"
+	"github.com/hello-ikun/ikunDb/options"
+	"github.com/hello-ikun/ikunDb/storage"
+	"github.com/hello-ikun/ikunDb/utils"
 )
 
 const (
@@ -210,6 +211,8 @@ func (m *MergeInfo) setActiveFile() error {
 	} else {
 		if !m.db.nonMergeFlag {
 			fileId = m.db.mergeEnd + 1
+		} else {
+			fileId = 1
 		}
 	}
 
