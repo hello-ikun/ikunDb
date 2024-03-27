@@ -1,7 +1,7 @@
 
 <img src="assets/ikun2.png" title="ikunDb" style="width: 42%;border-radius: 50%;"/>
 
-![GitHub top language](https://img.shields.io/github/languages/top/hello-ikun/IkunDb)   [![Go Reference](https://pkg.go.dev/badge/github.com/hello-ikun/IkunDb)](https://pkg.go.dev/github.com/hello-ikun/IkunDb)   ![LICENSE](https://img.shields.io/github/license/hello-ikun/IkunDb)   
+![GitHub top language](https://img.shields.io/github/languages/top/hello-ikun/IkunDb)   [![Go Reference](https://pkg.go.dev/badge/github.com/hello-ikun/IkunDb)](https://pkg.go.dev/github.com/hello-ikun/IkunDb)   !
 **IkunDB** 是我个人练习的成果，历时 2.5 周精心打磨而成的小型产品。尽管其参考价值有限，但却充满了戏剧性的。小说写多了，第一次写这玩意，突然就不会了哈哈哈。
 
 ## 👋 厉不厉害你 Kun哥?
